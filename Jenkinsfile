@@ -8,7 +8,6 @@
         echo "Pipeline Usando Jenkinsfile"
       }                    
     }
-
   }
 }
 
