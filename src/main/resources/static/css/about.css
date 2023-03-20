@@ -1,0 +1,14 @@
+  /*-----------------------------------quando a tela for menor-----------------------------------*/
+@media (max-width: 580px) {
+  #about{
+    position: relative;
+    top: 100px;
+  }
+
+  }
+
+
+  #about{
+    position: relative;
+    top: 100px;
+  }

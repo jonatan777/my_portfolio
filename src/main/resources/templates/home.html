@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html th:replace="~{layout/layout :: layout (~{:: main})}">
+
+<main>
+
+  <div class="w3-container w3-padding-64 w3-content">
+    <div class="descricao">
+      <p class="w3-text-black">Desenvolvedor Web Freelancer</p>
+    </div>
+
+
+    <header class="w3-container w3-center">
+      <img src="/img/img_fundo/seo-g6e8ba9f2f_1920.png" alt="Development" class="w3-image" width="700" height="800">
+    </header>
+
+  </div>
+
+  <div class="w3-card-4 w3-padding-64 w3-content" id="card" style="width:70%">
+
+    <div class="w3-container">
+      <p>1 new friend request</p>
+      <hr>
+      <p>Com o avanço da tecnologia e da globalização, o mercado de trabalho torna-se cada vez mais exigente
+        em relação aos profissionais e, além da especialização técnica, ou seja,
+        habilidades mensuráveis que podem ser desenvolvidas mediante cursos e treinamentos das mais diversas
+        tecnologias,
+        também chamadas de hard-skills, é importante desenvolver as habilidades comportamentais, ou soft skills.
+      </p>
+    </div>
+  </div>
+
+
+
+
+  <!-----------------------------------------------SERVIÇOS------- w3-jumbo--------------------------------------------------------->
+  <div class="w3-padding-64 w3-content w3-justify w3-text-black" id="servicos" style="width:70%">
+
+    <h2 class="w3-text-light-black w3-padding-64">SERVIÇOS</h2>
+    <hr style="width:200px">
+
+    <div class="w3-row-padding">
+      <div class=" w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-xlarge">
+          <p class="w3-dark-grey w3-xlarge w3-padding-32">Web Development</p>
+          <li id="1" class="w3-padding-16">API</li>
+          <li id="2" class="w3-padding-16">BLOG</li>
+          <li id="3" class="w3-padding-16">E-COMMERCE</li>
+          <li id="4" class="w3-padding-16">PORTFOLIO</li>
+          <li id="5" class="w3-padding-16">LADING PAGE</li>
+          <li id="6" class="w3-padding-16">SITE</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!------------------------------------------------------Portfolio--------------------------------------------------------------->
+    <div class="w3-padding-64 w3-content" id="portfolio">
+
+      <h2 class="w3-text-light-black w3-padding-64">PORTFÓLIO</h2>
+      <hr style="width:200px">
+      &emsp;
+
+      <div class="w3-row-padding">
+        <div class="w3-col s4">
+          <a href="/"><img src="/img/img_fundo/fundo1.jpg" alt="portfolio1" style="width:100%"></a>
+          <figcaption>serviços pedreiro</figcaption>
+        </div>
+        <div class="w3-col s4">
+          <a href="/"><img src="/img/img_fundo/fundo1.jpg" alt="portfolio2" style="width:100%"></a>
+          <figcaption>serviços pedreiro</figcaption>
+        </div>
+        <div class="w3-col s4">
+          <a href="/"><img src="/img/img_fundo/fundo1.jpg" alt="portfolio3" style="width:100%"></a>
+          <figcaption>serviços pedreiro</figcaption>
+        </div>
+      </div>
+      &emsp;
+
+      <div class="w3-row-padding w3-margin-top">
+        <div class="w3-col s4">
+          <a href="/"><img src="/img/img_fundo/fundo1.jpg" alt="portfolio4" style="width:100%"></a>
+          <figcaption>serviços pedreiro</figcaption>
+        </div>
+        <div class="w3-col s4">
+          <a href="/"><img src="/img/img_fundo/fundo1.jpg" alt="portfolio5" style="width:100%"></a>
+          <figcaption>serviços pedreiro</figcaption>
+        </div>
+        <div class="w3-col s4">
+          <a href="/"><img src="/img/img_fundo/fundo1.jpg" alt="portfolio6" style="width:100%"></a>
+          <figcaption>serviços pedreiro</figcaption>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!------------------------------------------------------CONTATO------------------------------------------------------------------------->
+
+
+    <div class="w3-padding-64 w3-content w3-text-black" id="contato">
+
+      <h2 class="w3-text-light-black w3-padding-64">Contato</h2>
+      <hr style="width:200px">
+
+      <div class="w3-section">
+        <p><i class="fa fa-map-marker fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>Recife, PE</p>
+        <p><i class="fa fa-phone fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>(81)98819-0488</p>
+        <p><i class="fa fa-envelope fa-fw w3-text-black w3-xxlarge w3-margin-right"> </i>daremigiocoperativa@gmail.com
+        </p>
+      </div><br>
+      <p>Vamos entrar em contato? <br>Descreva o serviço e enviaremos um orçamento.</p>
+
+      <form th:action="@{/send}" th:object="${email}" method="post">
+        <p><input class="w3-input w3-padding-16" type="text" field="*{nome}" name="nome" placeholder="Nome"></p>
+        <p><input class="w3-input w3-padding-16" type="text" field="*{fone}" name="fone" placeholder="Fone"></p>
+        <p><input class="w3-input w3-padding-16" type="text" field="*{email}" name="email" placeholder="Email"></p>
+        <p><input class="w3-input w3-padding-16" type="text" field="*{descricao}" name="descricao"
+            placeholder="Descrição do serviço"></p>
+
+        <p>
+          <button class="w3-button w3-light-black w3-padding-large" type="submit">
+            <i class="fa fa-paper-plane"></i> ENVIAR
+          </button>
+        </p>
+      </form>
+
+
+    </div>
+
+
+
+
+
+
+</main>
+
+
+</html>

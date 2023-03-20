@@ -1,0 +1,105 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif
+}
+
+.w3-row-padding img {
+  margin-bottom: 12px
+}
+
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {
+  width: 120px;
+  background: #222;
+}
+
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {
+  margin-left: 120px;
+  margin: 120px;
+}
+
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {
+  #main {
+    margin-left: 0
+  }
+}
+
+
+
+
+
+
+
+body {
+  background-image: url('/img/img_fundo/fundo3.jpg');
+  transition: 2s;
+  width: 100%;
+  height: auto;
+}
+
+
+
+#menu {
+  position: fixed;
+  top: 0px;
+  height: 100px;
+  z-index: 9;
+}
+
+
+
+
+footer {
+
+  /** background-color: rgb(14, 13, 20);**/
+  width: 100%;
+  height: 700px;
+  position: relative;
+  top: 0px;
+
+}
+
+#social {
+  position: relative;
+  top: 200px;
+}
+
+#corprite {
+  position: relative;
+  top: 440px;
+}
+
+
+
+
+
+/*-----------------------------------quando a tela for menor-----------------------------------*/
+
+@media (max-width: 580px) {
+
+
+  footer {
+    position: relative;
+    left: 0px;
+    top: 100px;
+  }
+
+  #social {
+    position: relative;
+    top: 350px;
+  }
+
+  #corprite {
+    position: relative;
+    top: 430px;
+  }
+
+
+}

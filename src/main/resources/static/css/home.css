@@ -1,0 +1,95 @@
+/*-----------------------------------------*/
+
+figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
+
+header {
+
+  position: relative;
+  top: -50px;
+  animation: mymove 2s;
+}
+
+@keyframes mymove {
+  from {
+    left: -500px;
+  }
+
+  to {
+    left: 0px;
+  }
+}
+
+/*-----------------------------------------*/
+img:hover {
+  transform: scale(1.5);
+}
+
+li:hover {
+  transform: scale(1.2);
+}
+
+/*-----------------------------------------*/
+#servicos {
+  position: relative;
+  top: 100px;
+  left: 0px;
+}
+
+/*-----------------------------------------*/
+.descricao {
+
+  font-size: 60px;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  animation: mymove2 2s;
+}
+
+
+@keyframes mymove2 {
+  from {
+    left: 500px;
+  }
+
+  to {
+    left: 0px;
+  }
+}
+
+
+/*-----------------------------------quando a tela for menor-----------------------------------*/
+
+@media (max-width: 580px) {
+
+  header {
+    position: relative;
+    top: 0px;
+  }
+
+  .descricao {
+    font-size: 30px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+  }
+
+  #servicos {
+    position: relative;
+    left: 0px;
+    top: 0px;
+  }
+
+  #contato {
+    position: relative;
+    left: 0px;
+    top: -50px;
+  }
+
+}

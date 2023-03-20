@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+
+<html lang="pt-br" th:fragment="layout (conteudo)">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Web Design, Web Development, CEO">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#5f5eaa">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/img/img_fundo/online-icon.png">
+  <link rel="apple-touch-icon" href="/img/img_fundo/responsive.png">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" media="all" href="../../css/layout.css" th:href="@{/css/layout.css}"/>
+  <link rel="stylesheet" type="text/css" media="all" href="../../css/home.css" th:href="@{/css/home.css}"/>
+  <link rel="stylesheet" type="text/css" media="all" href="../../css/about.css" th:href="@{/css/about.css}"/>
+  <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">Desenvolvedor Web Freelancer</title>
+</head>
+
+
+<body>
+
+  <div>
+    <!------------------------------------------ Icon Bar (Sidebar - hidden on large screens)---------------------------- &emsp; -->
+    <nav class="w3-bar w3-small w3-hide-small w3-center  w3-black" id="menu">
+      <!------------------------------------------------- AD image --------------------------------------------------------->
+
+      <a href="/" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>INICIO</p>
+      </a>
+      <a href="/#servicos" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <i class="fa fa-wrench w3-xxlarge"></i>
+        <p>SERVIÇOS</p>
+      </a>
+      <a href="/#portfolio" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <i class="fa fa-folder-open w3-xxlarge"></i>
+        <p>PORTFOLIO</p>
+      </a>
+      <a href="/#contato" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <i class="fa fa-envelope w3-xxlarge"></i>
+        <p>CONTATO</p>
+      </a>
+      <a href="/about" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <i class="fa fa-user w3-xxlarge"></i>
+        <p>SOBRE</p>
+      </a>
+    </nav>
+
+  </div>
+
+  <!---------------------------------- Navbar on small screens (Hidden on medium and large screens) ------------------------------->
+  <div class="w3-top w3-hide-large w3-hide-medium">
+    <div class="w3-bar w3-black w3-left w3-small">
+      <i class="fa fa-bars w3-hover-opacity w3-xxxlarge w3-padding-large" id="menu_small_screens"></i>
+
+    </div>
+    <div id="bar"></div>
+  </div>
+
+
+  <!---------------------------------- Main or Home ------------------------------->
+  <div class="container">
+    <main th:include="${conteudo}">
+
+    </main>
+  </div>
+
+  <!---------------------------------------------- Footer ----------------------------------------------------->
+
+  <footer class="w3-container w3-center  w3-text-black w3-black">
+    <div class="w3-content w3-xxxlarge" id="social">
+      <i class="fa fa-facebook-official w3-hover-opacity w3-black"></i>
+      <i class="fa fa-instagram w3-hover-opacity w3-black"></i>
+      <i class="fa fa-twitter w3-hover-opacity w3-black"></i>
+      <i class="fa fa-linkedin w3-hover-opacity w3-black"></i>
+      <p class="w3-medium w3-xlarge w3-black">Powered by <a href="https://www.w3schools.com/w3css/default.asp"
+          target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    </div>
+    <p class="w3-container w3-center w3-black" id="corprite">JE Desenvolvimento &copy; 2022</p>
+  </footer>
+
+
+
+  <script src="../../js/events.js"></script>
+<script src="../../js/menu_small_screens.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js', { scope: '/' })
+    .then(() => {
+      console.log('Service Worker registrado com sucesso.');
+    }).catch(error => {
+      console.log('Service Worker falhou:', error);
+    });
+  }
+</script>
+
+</body>
+
+
+</html>
+
+<!----{scope: '/js/'}-->
+
