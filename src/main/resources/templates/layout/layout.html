@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#5f5eaa">
   <link rel="manifest" href="/manifest.json">
-  <link rel="icon" href="/img/img_fundo/online-icon.png">
+  <link rel="icon" href="/img/img_fundo/seo-g6e8ba9f2f_1920.png">
   <link rel="apple-touch-icon" href="/img/img_fundo/responsive.png">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
@@ -25,29 +25,34 @@
 
   <div>
     <!------------------------------------------ Icon Bar (Sidebar - hidden on large screens)---------------------------- &emsp; -->
-    <nav class="w3-bar w3-small w3-hide-small w3-center  w3-black" id="menu">
+    <nav class="w3-bar w3-small w3-hide-small  w3-black" id="menu">
       <!------------------------------------------------- AD image --------------------------------------------------------->
+      <img src="/img/img_fundo/seo-g6e8ba9f2f_1920.png" alt="logo" class="w3-image w3-circle w3-center w3-margin-top" width="70" height="70">
 
+      <div class="w3-right w3-margin-left">
       <a href="/" class="w3-bar-item w3-button w3-padding-large w3-black">
-        <i class="fa fa-home w3-xxlarge"></i>
+        <i class="fa fa-home w3-large"></i>
         <p>INICIO</p>
       </a>
       <a href="/#servicos" class="w3-bar-item w3-button w3-padding-large w3-black">
-        <i class="fa fa-wrench w3-xxlarge"></i>
+        <i class="fa fa-wrench w3-large"></i>
         <p>SERVIÇOS</p>
       </a>
       <a href="/#portfolio" class="w3-bar-item w3-button w3-padding-large w3-black">
-        <i class="fa fa-folder-open w3-xxlarge"></i>
+        <i class="fa fa-folder-open w3-large"></i>
         <p>PORTFOLIO</p>
       </a>
       <a href="/#contato" class="w3-bar-item w3-button w3-padding-large w3-black">
-        <i class="fa fa-envelope w3-xxlarge"></i>
+        <i class="fa fa-envelope w3-large"></i>
         <p>CONTATO</p>
       </a>
       <a href="/about" class="w3-bar-item w3-button w3-padding-large w3-black">
-        <i class="fa fa-user w3-xxlarge"></i>
+        <i class="fa fa-user w3-large"></i>
         <p>SOBRE</p>
       </a>
+
+    </div>
+
     </nav>
 
   </div>
@@ -55,7 +60,7 @@
   <!---------------------------------- Navbar on small screens (Hidden on medium and large screens) ------------------------------->
   <div class="w3-top w3-hide-large w3-hide-medium">
     <div class="w3-bar w3-black w3-left w3-small">
-      <i class="fa fa-bars w3-hover-opacity w3-xxxlarge w3-padding-large" id="menu_small_screens"></i>
+      <i class="fa fa-bars w3-hover-opacity w3-large w3-padding-large" id="menu_small_screens"></i>
 
     </div>
     <div id="bar"></div>
@@ -89,7 +94,7 @@
 <script src="../../js/menu_small_screens.js"></script>
 <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js', { scope: '/' })
+    navigator.serviceWorker.register('//sw.js', { scope: '//' })
     .then(() => {
       console.log('Service Worker registrado com sucesso.');
     }).catch(error => {
@@ -103,5 +108,4 @@
 
 </html>
 
-<!----{scope: '/js/'}-->
 

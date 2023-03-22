@@ -33,10 +33,6 @@ h6 {
 
 
 
-
-
-
-
 body {
   background-image: url('/img/img_fundo/fundo3.jpg');
   transition: 2s;
@@ -49,7 +45,7 @@ body {
 #menu {
   position: fixed;
   top: 0px;
-  height: 100px;
+  height: 70px;
   z-index: 9;
 }
 

@@ -53,6 +53,18 @@ li:hover {
 }
 
 
+#card{
+
+  background-color: #fff;
+}
+
+
+#texto_inicial{
+  font-size: 20px;
+}
+
+
+
 @keyframes mymove2 {
   from {
     left: 500px;
