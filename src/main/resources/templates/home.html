@@ -62,32 +62,37 @@
 
       <div class="w3-row-padding">
         <div class="w3-col s4">
-          <a href="https://www.peladadomaruin.com.br"><img src="/img/img_fundo/pelada_maruim.png" alt="portfolio1" style="width:100%;"></a>
-          <figcaption>PWA</figcaption>
+          <a href="https://www.peladadomaruin.com.br"><img src="/img/img_fundo/pelada_maruim.png" alt="portfolio1" style="width:94%;"></a>
+          
+          <p class="w3-black w3-center"style="font-size:7px;color:rgb(255, 255, 255)">
+            PWA
+          </p>  
         </div>
         <div class="w3-col s4">
-          <a href="/"><img src="/img/img_fundo/fundo1.jpg" alt="portfolio2" style="width:100%"></a>
-          <figcaption>PORTFÓLIO</figcaption>
+          <a href="http://181.215.135.83:8080/"><img src="/img/img_fundo/fundo1.jpg" alt="portfolio2" style="width:100%"></a>
+          <p class="w3-black w3-center"style="font-size:7px;color:rgb(255, 255, 255)">
+            PORTFÓLIO
+          </p>
         </div>
         <div class="w3-col s4">
-          <a href="/"><img src="/img/img_fundo/fundo1.jpg" alt="portfolio3" style="width:100%"></a>
-          <figcaption>serviços pedreiro</figcaption>
+          <a href="/"><img src="/img/img_fundo/waiting.png" alt="portfolio3" style="width:100%"></a>
+          
         </div>
       </div>
       &emsp;
 
       <div class="w3-row-padding w3-margin-top">
         <div class="w3-col s4">
-          <a href="/"><img src="/img/img_fundo/fundo1.jpg" alt="portfolio4" style="width:100%"></a>
-          <figcaption>serviços pedreiro</figcaption>
+          <a href="/"><img src="/img/img_fundo/waiting.png" alt="portfolio3" style="width:100%"></a>
+         
         </div>
         <div class="w3-col s4">
-          <a href="/"><img src="/img/img_fundo/fundo1.jpg" alt="portfolio5" style="width:100%"></a>
-          <figcaption>serviços pedreiro</figcaption>
+          <a href="/"><img src="/img/img_fundo/waiting.png" alt="portfolio3" style="width:100%"></a>
+          
         </div>
         <div class="w3-col s4">
-          <a href="/"><img src="/img/img_fundo/fundo1.jpg" alt="portfolio6" style="width:100%"></a>
-          <figcaption>serviços pedreiro</figcaption>
+          <a href="/"><img src="/img/img_fundo/waiting.png" alt="portfolio3" style="width:100%"></a>
+          
         </div>
       </div>
 
@@ -103,20 +108,15 @@
       <hr style="width:200px">
 
       <div class="w3-section">
-        <p><i class="fa fa-map-marker fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>Recife, PE</p>
-        <p><i class="fa fa-phone fa-fw w3-text-black w3-xxlarge w3-margin-right"></i>(81)98819-0488</p>
-        <p><i class="fa fa-envelope fa-fw w3-text-black w3-xxlarge w3-margin-right"> </i>daremigiocoperativa@gmail.com
-        </p>
-      </div><br>
-      <p>Vamos entrar em contato? <br>Descreva o serviço e enviaremos um orçamento.</p>
+        <i class="fa fa-envelope fa-fw w3-text-black w3-xxlarge w3-margin-right"> </i>
+      </div>
+      <p>Vamos entrar em contato?</p>
 
       <form th:action="@{/send}" th:object="${email}" method="post">
         <p><input class="w3-input w3-padding-16" type="text" field="*{nome}" name="nome" placeholder="Nome"></p>
         <p><input class="w3-input w3-padding-16" type="text" field="*{fone}" name="fone" placeholder="Fone"></p>
         <p><input class="w3-input w3-padding-16" type="text" field="*{email}" name="email" placeholder="Email"></p>
-        <p><input class="w3-input w3-padding-16" type="text" field="*{descricao}" name="descricao"
-            placeholder="Descrição do serviço"></p>
-
+        <p><input class="w3-input w3-padding-16" type="text" field="*{descricao}" name="descricao" placeholder="Descrição"></p>
         <p>
           <button class="w3-button w3-light-black w3-padding-large" type="submit">
             <i class="fa fa-paper-plane"></i> ENVIAR
