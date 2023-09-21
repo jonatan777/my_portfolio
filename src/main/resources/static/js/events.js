@@ -1,11 +1,11 @@
-var institucional = ' <div class="w3-panel w3-black"><p style="font-size: 12px;">Um site institucional é o tipo mais comum encontrado pela web. O objetivo dele é apresentar a empresa e fazer marketing de conteúdo.</p></div>';
-var blog = '<div class="w3-panel w3-black"><p style="font-size: 12px;">Blog é um site informativo, também chamado de diário online, onde os conteúdos são apresentados em ordem cronológica inversa, ou seja, com destaque para as publicações mais recentes. Diferente de um site institucional de uma empresa, onde os conteúdos são sempre os mesmos, o blog é uma página atualizada frequentemente.</p></div>';
-var e_commerce = '<div class="w3-panel w3-black"><p style="font-size: 12px;">E-commerce, ou comércio eletrônico, refere-se às vendas pela internet de produtos e serviços. Assim, todas as transações comerciais são realizadas por meio de ferramentas online.</p></div>';
-var lading_page = '<div class="w3-panel w3-black"><p style="font-size: 12px;">  Landing Page é uma página que tem como objetivo gerar conversão dos visitantes em leads, oportunidades, clientes ou vendas. Por isso é tão importante criar uma que traga, de fato, resultados.  </p></div>';
-var portfolio = '<div class="w3-panel w3-black"><p style="font-size: 12px;">Um site de portfólio é uma forma única de mostrar seu trabalho e permitir que outras pessoas saibam mais sobre você. Um portfólio pode ser usado para atrair clientes, fechar negócios, candidatar a empregos e outros fins. </p></div>';
-var pwa = '<div class="w3-panel w3-black"><p style="font-size: 12px;">Da forma mais simples, um PWA é uma página criada com o uso de tecnologias da web mas direcionada aos aplicativos móveis.</p></div>';
-var catalago = '<div class="w3-panel w3-black"><p style="font-size: 12px;">Para quem deseja ter um site com seus produtos e mostrá-los a seus clientes, como um catálogo digital.</p></div>';
-
+var institucional = ' <div class="w3-panel w3-black"><p style="font-size: 14px;">Um site institucional é o tipo mais comum encontrado pela web. O objetivo dele é apresentar a empresa e fazer marketing de conteúdo.</p></div>';
+var blog = '<div class="w3-panel w3-black"><p style="font-size: 14px;">Blog é um site informativo, também chamado de diário online, onde os conteúdos são apresentados em ordem cronológica inversa, ou seja, com destaque para as publicações mais recentes. Diferente de um site institucional de uma empresa, onde os conteúdos são sempre os mesmos, o blog é uma página atualizada frequentemente.</p></div>';
+var e_commerce = '<div class="w3-panel w3-black"><p style="font-size: 14px;">E-commerce, ou comércio eletrônico, refere-se às vendas pela internet de produtos e serviços. Assim, todas as transações comerciais são realizadas por meio de ferramentas online.</p></div>';
+var lading_page = '<div class="w3-panel w3-black"><p style="font-size: 14px;">  Landing Page é uma página que tem como objetivo gerar conversão dos visitantes em leads, oportunidades, clientes ou vendas. Por isso é tão importante criar uma que traga, de fato, resultados.  </p></div>';
+var portfolio = '<div class="w3-panel w3-black"><p style="font-size: 14px;">Um site de portfólio é uma forma única de mostrar seu trabalho e permitir que outras pessoas saibam mais sobre você. Um portfólio pode ser usado para atrair clientes, fechar negócios, candidatar a empregos e outros fins. </p></div>';
+var pwa = '<div class="w3-panel w3-black"><p style="font-size: 14px;">Da forma mais simples, um PWA é uma página criada com o uso de tecnologias da web mas direcionada aos aplicativos móveis.</p></div>';
+var catalago = '<div class="w3-panel w3-black"><p style="font-size: 14px;">Para quem deseja ter um site com seus produtos e mostrá-los a seus clientes, como um catálogo digital.</p></div>';
+var hospedagem = '<div class="w3-panel w3-black"><p style="font-size: 14px;">Segundo a HOSTINGER hospedagem é um serviço online que permite que o conteúdo do seu site fique acessível na internet. Ao comprar um plano de hospedagem, você está alugando espaço num servidor físico para armazenar todos os seus dados e arquivos.</p></div>' // + <a href='https://www.hostinger.com.br/tutoriais/o-que-e-hospedagem-de-site' ></a>
 
  
 
@@ -103,6 +103,20 @@ function onClickCatalago() {
     return CATALAGO.innerHTML = catalago
   } else if (CATALAGO.innerHTML == catalago) {
     return CATALAGO.innerHTML = "CATÁLAGO DIGITAL"
+  }
+}
+
+
+/**-------------------------- hospedagem --------------------------------------------- */
+
+var HOSPEDAGEM = document.getElementById("8");
+HOSPEDAGEM.onclick = function () { onClickHospedagem() };
+
+function onClickHospedagem() {
+  if (HOSPEDAGEM.innerHTML == "HOSPEDAGEM") {
+    return HOSPEDAGEM.innerHTML = hospedagem
+  } else if (HOSPEDAGEM.innerHTML == hospedagem) {
+    return HOSPEDAGEM.innerHTML = "HOSPEDAGEM"
   }
 }
 
