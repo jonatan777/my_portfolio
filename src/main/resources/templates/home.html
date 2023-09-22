@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <html th:replace="~{layout/layout :: layout (~{:: main})}">
-
 <main>
-
   <div class="w3-container w3-padding-32 w3-content">
     <div class="descricao">
       <p class="w3-text-black">Desenvolvimento Web Freelancer</p>
     </div>
-
-
     <header class="w3-container w3-center">
       <img src="/img/img_fundo/dev.webp" alt="Development" class="w3-image" width="700" height="800">
     </header>
-
   </div>
-
   <div class="w3-card-4 w3-padding-16 w3-content w3-margin-bottom" id="card" style="width:70%">
-
     <div class="w3-container">
-      
       <p id="texto_inicial" style="text-shadow:o.5px 0.5px 0 #0e0d0d">
         Um dos benefícios de ter um site é que ele pode ajudar a expandir o alcance do seu negócio
         permitindo que as pessoas o encontrem de forma online e entrem em contato com você facilmente. 
@@ -26,19 +18,10 @@
       </p>
     </div>
   </div>
-
-  
-
-
-
-
-
   <!-----------------------------------------------SERVIÇOS------- w3-jumbo--------------------------------------------------------->
   <div class="w3-padding-64 w3-content w3-justify w3-text-black" id="servicos" style="width:70%">
-
     <h2 class="w3-text-light-black w3-padding-64">SERVIÇOS</h2>
     <hr style="width:200px">
-
     <div class="w3-row-padding">
       <div class=" w3-margin-bottom">
         <ul class="w3-ul w3-white w3-center w3-xlarge">
@@ -54,41 +37,29 @@
         </ul>
       </div>
     </div>
-
 <br>
 <br>
-
-
     <div class="w3-row-padding">
       <div class=" w3-margin-bottom">
        <div class="w3-card-4 w3-padding-16 w3-content w3-margin-bottom" id="card" style="width:100%">
-
     <div class="w3-container">
-      
       <p id="texto_inicial" style="text-shadow:o.5px 0.5px 0 #0e0d0d">
         Uma empresa sem um site dificilmente cresce de forma significativa hoje em dia. 
          Considerando que uma parcela cada vez maior de pessoas buscam por produtos e serviços primeiramente pela internet,
          estar presente nesse espaço é um dos melhores caminhos para o crecimento do seu négocio.
-        
       </p>
     </div>
   </div>
       </div>
-
     </div>
-    
-
     <!------------------------------------------------------Portfolio--------------------------------------------------------------->
     <div class="w3-padding-64 w3-content" id="portfolio">
-
       <h2 class="w3-text-light-black w3-padding-64">PORTFÓLIO</h2>
       <hr style="width:200px">
       &emsp;
-
       <div class="w3-row-padding">
         <div class="w3-col s4">
           <a href="https://www.peladadomaruin.com.br"><img src="/img/img_fundo/pelada_maruin.webp" class="portfolio_imagems" alt="portfolio1"></a>
-          
           <p class="w3-center"style="font-size:16px;color:rgb(0, 0, 0)">
             pwa
           </p>  
@@ -125,30 +96,20 @@
         </div>
       </div>
       &emsp;
-
       <div class="w3-row-padding w3-margin-top">
         <div class="w3-col s4">
-          <a href="/"><img src="/img/img_fundo/waiting.png" alt="waiting" width="80" height="80"></a>
+          <a href="/"><img src="/img/img_fundo/waiting.avif" alt="waiting" width="80" height="80"></a>
         </div>
-        
       </div>
-
-
     </div>
-
     <!------------------------------------------------------CONTATO------------------------------------------------------------------------->
-
-
     <div class="w3-padding-64 w3-content w3-text-black" id="contato">
-
       <h2 class="w3-text-light-black w3-padding-64">Contato</h2>
       <hr style="width:200px">
-
       <div class="w3-section">
         <i class="fa fa-envelope fa-fw w3-text-black w3-xxlarge w3-margin-right"> </i>
       </div>
       <p>Vamos entrar em contato?</p>
-
       <form th:action="@{/send}" th:object="${email}" method="post">
         <p><input class="w3-input w3-padding-16" type="text" field="*{nome}" name="nome" placeholder="Nome"></p>
         <p><input class="w3-input w3-padding-16" type="text" field="*{fone}" name="fone" placeholder="Fone"></p>
@@ -160,8 +121,6 @@
           </button>
         </p>
       </form>
-
-
   </div>
 
   
